@@ -57,8 +57,8 @@ async def save_batch_media_in_channel(bot: Client, editable: Message, message_id
             parse_mode="Markdown",
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("Open Link", url=share_link)],
-                 [InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates"),
-                  InlineKeyboardButton("Support Group", url="https://t.me/JoinOT")]]
+                 [InlineKeyboardButton("Bots Channel", url="https://t.me/SB_SERIALS"),
+                  InlineKeyboardButton("Support Group", url="https://t.me/kannada_serial_group")]]
             ),
             disable_web_page_preview=True
         )
@@ -90,7 +90,7 @@ async def save_media_in_channel(bot: Client, editable: Message, message: Message
         await forwarded_msg.reply_text(
             f"#PRIVATE_FILE:\n\n[{message.from_user.first_name}](tg://user?id={message.from_user.id}) Got File Link!",
             parse_mode="Markdown", disable_web_page_preview=True)
-        share_link = f"https://t.me/{Config.BOT_USERNAME}?start=AbirHasan2005_{str_to_b64(file_er_id)}"
+        share_link = f"https://t.me/{Config.BOT_USERNAME}?start=sb_serials_{str_to_b64(file_er_id)}"
         await editable.edit(
             "**Your File Stored in my Database!**\n\n"
             f"Here is the Permanent Link of your file: {share_link} \n\n"
@@ -98,8 +98,8 @@ async def save_media_in_channel(bot: Client, editable: Message, message: Message
             parse_mode="Markdown",
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("Open Link", url=share_link)],
-                 [InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates"),
-                  InlineKeyboardButton("Support Group", url="https://t.me/JoinOT")]]
+                 [InlineKeyboardButton("Bots Channel", url="https://t.me/SB_SERIALS"),
+                  InlineKeyboardButton("Support Group", url="https://t.me/kannada_serial_group")]]
             ),
             disable_web_page_preview=True
         )
